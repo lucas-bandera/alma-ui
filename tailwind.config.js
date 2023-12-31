@@ -2,6 +2,10 @@ const { fontFamily } = require("tailwindcss/defaultTheme")
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  prefix: "alma-",
+  corePlugins: {
+    preflight: false
+  },
   darkMode: ["class"],
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   safelist: [
